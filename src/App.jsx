@@ -1,17 +1,23 @@
 import { useEffect, useState } from "react"
 import SingleCard from "./components/SingleCard"
-import { use } from "react"
+
+// images imports
+import img1 from './assets/c-plus-plus.png'
+import img2 from './assets/c-sharp.png'
+import img3 from './assets/css-3.png'
+import img4 from './assets/html-5.png'
+import img5 from './assets/javascript.png'
+import img6 from './assets/visual-studio-code.png'
 
 function App() {
-  const cards =
-    [
-      'src/assets/c-plus-plus.png',
-      'src/assets/c-sharp.png',
-      'src/assets/css-3.png',
-      'src/assets/html-5.png',
-      'src/assets/javascript.png',
-      'src/assets/visual-studio-code.png'
-    ]
+  const cards = [
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
+    img6
+  ]
 
   const [shuffledCards, setShuffledCards] = useState([])
   const [choice1, setChoice1] = useState(null)
