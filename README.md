@@ -1,16 +1,29 @@
-# React + Vite
+# 🃏 Card Matching Game (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple card matching (memory) game built with React. Flip two cards at a time—if they match, they stay revealed. Match all pairs to win.
 
-Currently, two official plugins are available:
+Features include card duplication and random shuffling, click-to-flip interaction, match detection logic, and a clean, beginner-friendly UI. This project is intended as a learning exercise for core React concepts such as state management, effects, and component-based design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The game starts with a shuffled deck containing pairs of cards. Clicking a card reveals it. When two cards are revealed, the game checks for a match. Matching cards remain visible, while non-matching cards flip back after a short delay. The game ends when all pairs are matched.
 
-## React Compiler
+The project is built using React, and an npm component for card flipping and delays.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+To run the project locally, first clone the repository:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+git clone https://github.com/your-username/card-matching-game.git
+cd card-matching-game
+```
+
+Install dependencies:
+```bash
+npm install
+```
+
+Start the development server:
+```bash
+npm start
+```
+
+Enjoy!
